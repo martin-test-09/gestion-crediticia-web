@@ -1,0 +1,25 @@
+{
+  "name": "credit-web",
+  "version": "1.0.0",
+  "description": "Frontend de Gestión Crediticia para presupuestos de crédito automotor.",
+  "packageManager": "pnpm@11.5.2",
+  "type": "module",
+  "scripts": {
+    "preinstall": "node -e \"const ua=process.env.npm_config_user_agent||''; if (!ua.startsWith('pnpm/')) { console.error('Este proyecto usa pnpm. Ejecuta: pnpm install'); process.exit(1); }\"",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-router": "^7.10.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.2",
+    "vite": "^7.2.7"
+  }
+}
